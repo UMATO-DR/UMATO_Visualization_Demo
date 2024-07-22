@@ -42,7 +42,22 @@ For detailed information on the algorithm and parameter usage, check the API lis
 #### Figure 1: Accuracy Rankings in Dimensionality Reduction
 ![Figure 1](path/to/figure1.png)  
 **Description:** This figure illustrates the average scores of nine DR techniques in the accuracy analysis. Techniques ranked in the top four are highlighted in blue, with darker shades indicating higher accuracy. Techniques ranked in the bottom four are highlighted in red, with darker shades indicating lower performance. UMATO outperforms other techniques significantly in terms of global metrics, with a slight sacrifice in local metrics. Both the original data and projections are standardized to minimize the impact of scaling.
-<table>
+<style>
+    table.dr-table {
+        font-size: 0.8em; /* Adjusts the font size to be smaller */
+        width: 100%; /* Ensures the table uses the full width available */
+        border-collapse: collapse; /* Improves the appearance of borders */
+    }
+    table.dr-table th, table.dr-table td {
+        border: 1px solid #ccc; /* Adds borders to cells for better readability */
+        padding: 5px; /* Adds padding inside cells */
+        text-align: center; /* Centers the text in cells */
+    }
+    table.dr-table caption {
+        margin: 10px 0; /* Adds space around the caption */
+    }
+</style>
+<table class="dr-table">
     <caption>The average scores that nine DR techniques obtain in the accuracy analysis. For each quality metric, DR techniques ranked in the first-fourth place are highlighted in blue, where we assign higher opacity to the better techniques. Similarly, techniques ranked in the sixth-ninth place are highlighted in red, where worse techniques have higher opacity. UMATO substantially outperforms baselines in terms of global metrics with a slight sacrifice in local metric scores. Note that we standardize both the original data and projections to minimize the impact of scaling.</caption>
     <thead>
         <tr>
