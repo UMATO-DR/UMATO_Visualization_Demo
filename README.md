@@ -1,4 +1,9 @@
+<p align="center">
+  <h2 align="center">UMATO Visualization Demo</h2>
+	<h3 align="center">Uniform Manifold Approximation with Two-phase Optimization</h3>
+</p>
 
+---
 Uniform Manifold Approximation with Two-phase Optimization (UMATO) is a dimensionality reduction technique designed to preserve both the global and local structures of high-dimensional data. Most existing dimensionality reduction algorithms focus on either global or local structure, which can lead to overlooking or misinterpreting important patterns in the data. Additionally, many existing algorithms suffer from instability.
 
 To address these issues, UMATO introduces a two-phase optimization process: global optimization and local optimization. The global structure is obtained by selecting and optimizing hub points, and then the local structure is refined by initializing and optimizing other points using the nearest neighbor graph. This approach ensures a balanced preservation of global and local structures while maintaining stability.
